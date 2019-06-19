@@ -1,0 +1,28 @@
+
+<html>
+
+    <head>
+        <title>Formulaire</title>
+    </head>
+
+    <body>
+
+        <h1>Formulaire de renseignement patient</h1>
+
+        <form method="post" action="http://localhost:8080/compute">
+            <input type="text" required name="firstname" placeholder="Enter your firstname"/><br>
+            <input type="text" required name="lastname" placeholder="Enter your lastname"/><br>
+            <input type="date" required name="birthdate" placeholder="Enter your birthdate(yyyy-mm-dd)"/><br>
+            <input type="submit" name="submit" placeholder="Validation"/><br>
+        </form>
+
+        <h1>Champ de recherche</h1>
+
+        <form methode="get" action="http://localhost:8080/requests">
+        	<input type="text" required name="query" placeholder="Enter your search"><br>
+            <input type="submit" name="search" placeholder="Validation">
+        </form>
+        
+    </body>
+    
+</html>
